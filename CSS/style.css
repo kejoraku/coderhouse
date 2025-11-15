@@ -337,3 +337,138 @@ h2{
     padding: 20px; /* Relleno para que la sombra se vea bien */
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra debajo del footer */
 }
+
+ /* -----------------------------------------Redes Sociales con Grid----------------------------------- */
+
+ /* Utilizo CSS Grid para integrar y tambien organizar las redes sociales en el footer */
+ .redes-sociales-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.red-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.red-social-link:hover {
+    background-color: #FFFD00;
+    color: #000;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 253, 0, 0.4);
+    border-color: #FFFD00;
+}
+
+.red-social-link i {
+    transition: transform 0.3s ease;
+}
+
+.red-social-link:hover i {
+    transform: scale(1.2);
+}
+
+/* Estilos responsive para las redes sociales */
+@media (max-width: 576px) {
+    .redes-sociales-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        max-width: 300px;
+    }
+    
+    .red-social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}
+
+/* ------ Flecha para evitar el scroll en la navegación y volver arriba de la página ------ */
+#btn-top {
+ width: 56px !important;
+ height: 56px !important;
+ border-radius: 50% !important;
+ font-size: 1.8rem;
+ box-shadow: 0 4px 16px rgba(0,0,0,0.18), 0 0 0 2px #fff3;
+ transition: background 0.13s, box-shadow 0.18s, transform 0.17s;
+ z-index: 1200;
+ align-items: center;
+ justify-content: center;
+ display: none;
+}
+#btn-top:hover, #btn-top:focus {
+ background: #ff9900 !important;
+ color: #fff !important;
+ box-shadow: 0 8px 32px rgba(255,153,0,0.22), 0 0 0 3px #fffd00cc;
+ transform: translateY(-3px) scale(1.07);
+}
+
+/* Menu tipo hamburguesa de bootstrap */
+@media (max-width: 991px) {
+ .navbar-collapse {
+   background: none !important;
+   box-shadow: none !important;
+   border: none !important;
+   position: static !important;
+   width: auto !important;
+   height: auto !important;
+   padding: 0 !important;
+   border-radius: 0 !important;
+ }
+ .navbar-collapse.show {
+   background: #111 !important;
+   color: #fff !important;
+   position: fixed !important;
+   top: 60px !important;
+   right: 0 !important;
+   left: auto !important;
+   width: 230px !important;
+   height: calc(100vh - 60px) !important;
+   border-radius: 0 0 0 16px !important;
+   box-shadow: -6px 0 36px #111a, 1px 0 12px #fffd00bb !important;
+   border-right: 4px solid #fffd00;
+   z-index: 1202 !important;
+   padding: 24px 0 !important;
+   align-items: flex-start !important;
+   display: flex !important;
+   flex-direction: column !important;
+   gap: 0;
+   transition: all .18s;
+ }
+ .navbar-nav .nav-link {
+   color: #fff !important;
+   font-weight: bold;
+   font-size: 1.15em;
+   letter-spacing: 0.03em;
+   text-shadow: 0 2px 15px #111b;
+   padding: 15px 36px 15px 20px !important;
+   width: 100%;
+   display: block;
+ }
+ .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+   color: #fffd00 !important;
+   text-shadow: 0 2px 16px #ff9900bb;
+   background: #333;
+ }
+}
+/* Elimina nav-links mobile custom previo */
+@media (max-width: 800px) {
+ .nav-links, .nav-links a {
+   all: unset;
+ }
+}
