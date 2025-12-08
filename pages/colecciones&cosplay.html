@@ -13,7 +13,7 @@
 
 <!-- Con las integraciones de bootstrap y etiquetas modifique un poco los diseños planteados en un principio del wireframe -->
 
-<body style="min-height: 100vh; display: flex; flex-direction: column;">
+<body class="body-main">
 
     <header>
 
@@ -41,27 +41,30 @@
     </header>
 
 
-    <main class="flex-shrink-0 pt-5" style="margin-top: 70px;">
-        <div class="container text-center my-4">
-            <h1 class="mb-4">
+    <main class="main-custom">
+        <div class="contenedor-colecciones texto-centrado margen-vertical-4">
+            <h1 class="margen-inferior-4">
                 Nuestra colección de Cosplays
             </h1>
-            <p class="lead">
+            <p class="texto-destacado">
                 En Colecciones y Cosplay podrás encontrar opciones personalizadas y exclusivas para pedidos a medida (puedes incluir detalles, pruebas y medidas exactas)
             </p>
         </div>
 
-        <section class="container">
-            <div class="row g-4 justify-content-center">
+        <section class="contenedor-colecciones">
+            <div class="fila-productos-colecciones">
                 
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
-                    <div class="card h-100 w-100 shadow">
-                        <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_1.png" class="card-img-top img-caja-colecciones-cosplay mx-auto d-block mt-3" style="max-width:80%;" alt="Cosplay Lucy Cyberpunk">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">
+                <div class="columna-producto-colecciones display-flex">
+                    <div class="card-colecciones">
+                        <div class="img-container-colecciones">
+                            <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_1.png" class="card-img-colecciones img-caja-colecciones-cosplay margen-auto-x display-block margen-superior-3" alt="Cosplay Lucy Cyberpunk">
+                            <button class="zoom-btn-coleccion" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
+                        <div class="card-body-colecciones">
+                            <h5 class="card-title-colecciones">
                                 Lucy
                             </h5>
-                            <p class="card-text text-center">
+                            <p class="card-text-colecciones">
                                 Cosplay
                                 <br>
                                 Inspirado en Cyberpunk
@@ -74,14 +77,17 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
-                    <div class="card h-100 w-100 shadow">
-                        <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_2.png" class="card-img-top img-caja-colecciones-cosplay mx-auto d-block mt-3" style="max-width:80%;" alt="Cosplay Astolfo">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">
+                <div class="columna-producto-colecciones display-flex">
+                    <div class="card-colecciones">
+                        <div class="img-container-colecciones">
+                            <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_2.png" class="card-img-colecciones img-caja-colecciones-cosplay margen-auto-x display-block margen-superior-3" alt="Cosplay Astolfo">
+                            <button class="zoom-btn-coleccion" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
+                        <div class="card-body-colecciones">
+                            <h5 class="card-title-colecciones">
                                 Astolfo
                             </h5>
-                            <p class="card-text text-center">
+                            <p class="card-text-colecciones">
                                 Cosplay
                                 <br>
                                 Inspirado en Fate
@@ -94,14 +100,17 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
-                    <div class="card h-100 w-100 shadow">
-                        <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_3.png" class="card-img-top img-caja-colecciones-cosplay mx-auto d-block mt-3" style="max-width:80%;" alt="Cosplay Venti Arconte">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">
+                <div class="columna-producto-colecciones display-flex">
+                    <div class="card-colecciones">
+                        <div class="img-container-colecciones">
+                            <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_3.png" class="card-img-colecciones img-caja-colecciones-cosplay margen-auto-x display-block margen-superior-3" alt="Cosplay Venti Arconte">
+                            <button class="zoom-btn-coleccion" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
+                        <div class="card-body-colecciones">
+                            <h5 class="card-title-colecciones">
                                 Venti Arconte
                             </h5>
-                            <p class="card-text text-center">
+                            <p class="card-text-colecciones">
                                 Cosplay
                                 <br>
                                 Inspirado en Genshin Impact
@@ -114,14 +123,17 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
-                    <div class="card h-100 w-100 shadow">
-                        <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_4.png" class="card-img-top img-caja-colecciones-cosplay mx-auto d-block mt-3" style="max-width:80%;" alt="Cosplay Keqing">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">
+                <div class="columna-producto-colecciones display-flex">
+                    <div class="card-colecciones">
+                        <div class="img-container-colecciones">
+                            <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_4.png" class="card-img-colecciones img-caja-colecciones-cosplay margen-auto-x display-block margen-superior-3" alt="Cosplay Keqing">
+                            <button class="zoom-btn-coleccion" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
+                        <div class="card-body-colecciones">
+                            <h5 class="card-title-colecciones">
                                 Keqing
                             </h5>
-                            <p class="card-text text-center">
+                            <p class="card-text-colecciones">
                                 Cosplay
                                 <br>
                                 Inspirado en Genshin Impact
@@ -134,14 +146,17 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
-                    <div class="card h-100 w-100 shadow">
-                        <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_5.png" class="card-img-top img-caja-colecciones-cosplay mx-auto d-block mt-3" style="max-width:80%;" alt="Cosplay Astolfo Colegiala">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">
+                <div class="columna-producto-colecciones display-flex">
+                    <div class="card-colecciones">
+                        <div class="img-container-colecciones">
+                            <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_5.png" class="card-img-colecciones img-caja-colecciones-cosplay margen-auto-x display-block margen-superior-3" alt="Cosplay Astolfo Colegiala">
+                            <button class="zoom-btn-coleccion" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
+                        <div class="card-body-colecciones">
+                            <h5 class="card-title-colecciones">
                                 Astolfo Colegiala
                             </h5>
-                            <p class="card-text text-center">
+                            <p class="card-text-colecciones">
                                 Cosplay
                                 <br>
                                 Inspirado en Fate Grand Order
@@ -154,14 +169,17 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
-                    <div class="card h-100 w-100 shadow">
-                        <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_6.png" class="card-img-top img-caja-colecciones-cosplay mx-auto d-block mt-3" style="max-width:80%;" alt="Cosplay Arlechinno">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">
+                <div class="columna-producto-colecciones display-flex">
+                    <div class="card-colecciones">
+                        <div class="img-container-colecciones">
+                            <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_6.png" class="card-img-colecciones img-caja-colecciones-cosplay margen-auto-x display-block margen-superior-3" alt="Cosplay Arlechinno">
+                            <button class="zoom-btn-coleccion" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
+                        <div class="card-body-colecciones">
+                            <h5 class="card-title-colecciones">
                                 Arlechinno
                             </h5>
-                            <p class="card-text text-center">
+                            <p class="card-text-colecciones">
                                 Cosplay<br>Inspirado en Genshin Impact
                                 <br>
                                 <strong>
@@ -172,14 +190,17 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
-                    <div class="card h-100 w-100 shadow">
-                        <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_7.png" class="card-img-top img-caja-colecciones-cosplay mx-auto d-block mt-3" style="max-width:80%;" alt="Cosplay Burnice">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">
+                <div class="columna-producto-colecciones display-flex">
+                    <div class="card-colecciones">
+                        <div class="img-container-colecciones">
+                            <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_7.png" class="card-img-colecciones img-caja-colecciones-cosplay margen-auto-x display-block margen-superior-3" alt="Cosplay Burnice">
+                            <button class="zoom-btn-coleccion" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
+                        <div class="card-body-colecciones">
+                            <h5 class="card-title-colecciones">
                                 Burnice
                             </h5>
-                            <p class="card-text text-center">
+                            <p class="card-text-colecciones">
                                 Cosplay
                                 <br>
                                 Inspirado en Zenless Zone Zero
@@ -192,14 +213,17 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
-                    <div class="card h-100 w-100 shadow">
-                        <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_8.png" class="card-img-top img-caja-colecciones-cosplay mx-auto d-block mt-3" style="max-width:80%;" alt="Akali Guardiana Estelar">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">
+                <div class="columna-producto-colecciones display-flex">
+                    <div class="card-colecciones">
+                        <div class="img-container-colecciones">
+                            <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_8.png" class="card-img-colecciones img-caja-colecciones-cosplay margen-auto-x display-block margen-superior-3" alt="Akali Guardiana Estelar">
+                            <button class="zoom-btn-coleccion" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
+                        <div class="card-body-colecciones">
+                            <h5 class="card-title-colecciones">
                                 Akali Guardiana Estelar
                             </h5>
-                            <p class="card-text text-center">
+                            <p class="card-text-colecciones">
                                 Cosplay
                                 <br>
                                 Inspirado en League of Legends
@@ -212,14 +236,17 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
-                    <div class="card h-100 w-100 shadow">
-                        <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_9.png" class="card-img-top img-caja-colecciones-cosplay mx-auto d-block mt-3" style="max-width:80%;" alt="Fei xiao">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">
+                <div class="columna-producto-colecciones display-flex">
+                    <div class="card-colecciones">
+                        <div class="img-container-colecciones">
+                            <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_9.png" class="card-img-colecciones img-caja-colecciones-cosplay margen-auto-x display-block margen-superior-3" alt="Fei xiao">
+                            <button class="zoom-btn-coleccion" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
+                        <div class="card-body-colecciones">
+                            <h5 class="card-title-colecciones">
                                 Fei Xiao
                             </h5>
-                            <p class="card-text text-center">
+                            <p class="card-text-colecciones">
                                 Cosplay
                                 <br>
                                 Inspirado en Honkai Star Rail
@@ -232,32 +259,38 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
-                    <div class="card h-100 w-100 shadow">
-                        <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_10.png" class="card-img-top img-caja-colecciones-cosplay mx-auto d-block mt-3" style="max-width:80%;" alt="Furina">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">
+                <div class="columna-producto-colecciones display-flex">
+                    <div class="card-colecciones">
+                        <div class="img-container-colecciones">
+                            <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_10.png" class="card-img-colecciones img-caja-colecciones-cosplay margen-auto-x display-block margen-superior-3" alt="Furina">
+                            <button class="zoom-btn-coleccion" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
+                        <div class="card-body-colecciones">
+                            <h5 class="card-title-colecciones">
                                 Furina
                             </h5>
-                            <p class="card-text text-center">Cosplay<br>Inspirado en Genshin Impact<br><strong>Consultar precio</strong></p>
+                            <p class="card-text-colecciones">Cosplay<br>Inspirado en Genshin Impact<br><strong>Consultar precio</strong></p>
                         </div>
                     </div>
                 </div>
                 <!-- Mavuika -->
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
-                    <div class="card h-100 w-100 shadow">
-                        <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_11.png" class="card-img-top img-caja-colecciones-cosplay mx-auto d-block mt-3" style="max-width:80%;" alt="Mavuika">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Mavuika</h5>
-                            <p class="card-text text-center">Cosplay<br>Inspirado en Genshin Impact<br><strong>Consultar precio</strong></p>
+                <div class="columna-producto-colecciones display-flex">
+                    <div class="card-colecciones">
+                        <div class="img-container-colecciones">
+                            <img src="../images/colecciones-cosplay/caja_colecciones-cosplay_11.png" class="card-img-colecciones img-caja-colecciones-cosplay margen-auto-x display-block margen-superior-3" alt="Mavuika">
+                            <button class="zoom-btn-coleccion" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
+                        <div class="card-body-colecciones">
+                            <h5 class="card-title-colecciones">Mavuika</h5>
+                            <p class="card-text-colecciones">Cosplay<br>Inspirado en Genshin Impact<br><strong>Consultar precio</strong></p>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
-        <div class="container text-center my-5">
-            <a class="btn btn-link" href="#">Volver arriba</a>
-        </div>
+    <div class="contenedor-colecciones texto-centrado margen-vertical-5">
+            
+    </div>
     </main>
 
      <!-- Para emplear las heramientas que vimos de CSS Grid se me ocurrió agregar en el Footer los iconos y enlaces a las redes sociales oficiales-->
@@ -285,8 +318,61 @@
           </div>
         </div>
       </footer>
+
+      <!-- Botón flotante para Volver arriba de la pagina sin tener que scrollear -->
+      <button id="btn-top" type="button" class="btn btn-dark rounded-circle shadow position-fixed" style="bottom:32px;right:32px; z-index:1200; display:none; width:48px; height:48px;">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+  
+      <script>
+        // Mostrar el botón sólo al hacer scroll
+        const btnTop = document.getElementById('btn-top');
+        window.addEventListener('scroll', () => {
+          btnTop.style.display = (window.scrollY > 200) ? 'inline-flex' : 'none';
+          });
+          btnTop.onclick = () => window.scrollTo({top:0,behavior:'smooth'});
+          </script>
   
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Modal para ampliar imagen colecciones/cosplay -->
+      <div id="modal-img-colecciones" tabindex="-1" aria-modal="true" aria-hidden="true">
+          <button class="modal-cerrar" aria-label="Cerrar">&times;</button>
+          <div class="modal-contenido">
+              <img src="" alt="Imagen ampliada" id="modal-img-colecciones-img">
+          </div>
+      </div>
+<script>
+(function(){
+  const modal = document.getElementById('modal-img-colecciones');
+  const modalImg = document.getElementById('modal-img-colecciones-img');
+  const cerrarBtn = modal.querySelector('.modal-cerrar');
+  document.querySelectorAll('.img-container-colecciones .card-img-colecciones, .img-container-colecciones .zoom-btn-coleccion').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const img = btn.tagName === 'IMG' ? btn : btn.parentElement.querySelector('img');
+      modalImg.src = img.src;
+      modal.classList.add('abierto');
+      modalImg.focus();
+    });
+  });
+  cerrarBtn.addEventListener('click', function() {
+    modal.classList.remove('abierto');
+    modalImg.src = '';
+  });
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.classList.remove('abierto');
+      modalImg.src = '';
+    }
+  });
+  document.addEventListener('keydown', function(e) {
+    if (modal.classList.contains('abierto') && (e.key === 'Escape' || e.key === 'Esc')) {
+      modal.classList.remove('abierto');
+      modalImg.src = '';
+    }
+  });
+})();
+</script>
 </body>
 </html>

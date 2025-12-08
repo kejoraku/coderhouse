@@ -13,7 +13,7 @@
 
 <!-- Con las integraciones de bootstrap y etiquetas modifique un poco los diseños planteados en un principio del wireframe -->
 
-<body style="min-height: 100vh; display: flex; flex-direction: column;">
+<body class="body-main">
 
     <header>
 
@@ -43,7 +43,7 @@
 
     <!-- La idea original era generar una instancia donde vendedores con una cuenta en la web puedan subir sus productos categorizandolos por cosplay, peluca, calzado, prop
     Noté que no tomé en cuenta un factor muy improtante como el talle, por lo tanto, no lo pude implementar -->
-    <main class="flex-shrink-0 pt-5" style="margin-top: 70px;">
+    <main class="main-custom">
         <div class="container text-center my-5">
 
             <h1 class="mb-4">
@@ -66,150 +66,914 @@
 
         <section class="container">
             <div class="row g-4 justify-content-center" id="catalogo-productos">
+
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay peluca">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_1.png" class="card-img-top" alt="Cosplay Peluca">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Larganoche
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Honkai Star Rail
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span> 
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item peluca">
                     <div class="card shadow w-100">
-                        <img src="../images/tienda/tienda_caja_1.png" class="card-img-top" alt="Peluca">
+                        <img src="../images/catalogo/catalogo_caja_2.png" class="card-img-top" alt="Peluca">
                         <div class="card-body">
                             <h5 class="card-title">
-                                Peluca Gold Ship
+                                Gold Ship
                             </h5>
                             <p class="card-text">
                                 Inspirado en Uma Musume
                             </p>
-                            <span class="badge bg-secondary">
-                                Peluca
-                            </span>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> <span style="color: #666;">Universal</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay peluca props calzado">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_3.png" class="card-img-top" alt="Cosplay Peluca Props Calzado">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Agente Evelyn Chevalier
+                            </h5>
+                            <p class="card-text">
+                                Zenless Zone Zero
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                                <span class="etiqueta-talle">40</span>
+                                <span class="etiqueta-talle">41</span>
+                                <span class="etiqueta-talle">42</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span> 
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span> 
+                                <span class="badge bg-info">
+                                    Props
+                                </span> 
+                                <span class="badge bg-success">
+                                    Calzado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item calzado">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_4.png" class="card-img-top" alt="Calzado">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Midoriya - Deku 
+                            </h5>
+                            <p class="card-text">
+                                Inspiradas en My Hero Academia
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle">39</span>
+                                <span class="etiqueta-talle">40</span>
+                                <span class="etiqueta-talle">41</span>
+                                <span class="etiqueta-talle">42</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-success">
+                                    Calzado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item props">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_5.png" class="card-img-top" alt="Props">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Holo
+                            </h5>
+                            <p class="card-text">
+                                Inspirado en Spice & Wolf
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-unico">Talle único</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-info">
+                                    Props
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay peluca props">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_6.png" class="card-img-top" alt="Props">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Marin Kitagawa
+                            </h5>
+                            <p class="card-text">
+                                Inspirado en My Dress up Darling
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                                <span class="etiqueta-talle etiqueta-talle-xl">XL</span>
+                                <span class="etiqueta-talle etiqueta-talle-unico">Talle único (Props)</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span>
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                                <span class="badge bg-info">
+                                    Props
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item calzado">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_7.png" class="card-img-top" alt="Calzado">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Cyberpunk
+                            </h5>
+                            <p class="card-text">
+                                Inspiradas en Cyberpunk 2077
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle">38</span>
+                                <span class="etiqueta-talle">39</span>
+                                <span class="etiqueta-talle">40</span>
+                                <span class="etiqueta-talle">41</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-success">
+                                    Calzado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item peluca">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_8.png" class="card-img-top" alt="Peluca">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Power
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Chainsaw Man
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> <span style="color: #666;">Universal</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_9.png" class="card-img-top" alt="cosplay">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Felix
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Re Zero
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                                <span class="etiqueta-talle etiqueta-talle-xl">XL</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item peluca">
                     <div class="card shadow w-100">
-                        <img src="../images/tienda/tienda_caja_3.png" class="card-img-top" alt="Peluca">
+                        <img src="../images/catalogo/catalogo_caja_10.png" class="card-img-top" alt="peluca">
                         <div class="card-body">
                             <h5 class="card-title">
-                                Peluca Holo
+                                Manjirō Sano
                             </h5>
                             <p class="card-text">
-                                Orejas & Cola
+                                Inspirada en Tokyo Revengers
                             </p>
-                            <span class="badge bg-secondary">
-                                Peluca
-                            </span>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> <span style="color: #666;">Universal</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item props">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay peluca props">
                     <div class="card shadow w-100">
-                        <img src="../images/tienda/tienda_caja_4.png" class="card-img-top" alt="Props">
+                        <img src="../images/catalogo/catalogo_caja_11.png" class="card-img-top" alt="Cosplay Peluca Props">
                         <div class="card-body">
                             <h5 class="card-title">
-                                Marin Kitagawa Props
+                                Ahri Flor Espiritual
                             </h5>
                             <p class="card-text">
-                                Incluye props y peluca
+                                Inspirada en League of Legends
                             </p>
-                            <span class="badge bg-info">
-                                Props
-                            </span>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                                <span class="etiqueta-talle etiqueta-talle-unico">Talle único (Props)</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span>
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                                <span class="badge bg-info">
+                                    Props
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item props">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item calzado">
                     <div class="card shadow w-100">
-                        <img src="../images/tienda/tienda_caja_5.png" class="card-img-top" alt="Props">
+                        <img src="../images/catalogo/catalogo_caja_12.png" class="card-img-top" alt="Calzado">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Kanao Tsuyri
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Demon Slayer
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle">38</span>
+                                <span class="etiqueta-talle">39</span>
+                                <span class="etiqueta-talle">40</span>
+                                <span class="etiqueta-talle">41</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-success">
+                                    Calzado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay peluca props">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_13.png" class="card-img-top" alt="Cosplay Peluca Props">
                         <div class="card-body">
                             <h5 class="card-title">
                                 Himejima Gyomei
                             </h5>
                             <p class="card-text">
-                                Cosplay, peluca y props
+                                Inspirado en Demon Slayer
                             </p>
-                            <span class="badge bg-info">
-                                Props
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay">
-                    <div class="card shadow w-100">
-                        <img src="../images/tienda/tienda_caja_2.png" class="card-img-top" alt="Cosplay">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                Cosplay Hatsune Miku
-                            </h5>
-                            <p class="card-text">
-                                Cosplay completo
-                            </p>
-                            <span class="badge bg-success">
-                                Cosplay
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay">
-                    <div class="card shadow w-100">
-                        <img src="../images/tienda/tienda_caja_9.png" class="card-img-top" alt="Cosplay">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                Cosplay Frieren
-                            </h5>
-                            <p class="card-text">
-                                Cosplay, peluca y props
-                            </p>
-                            <span class="badge bg-success">
-                                Cosplay
-                            </span>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                                <span class="etiqueta-talle etiqueta-talle-unico">Talle único (Props)</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span>
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                                <span class="badge bg-info">
+                                    Props
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item calzado">
                     <div class="card shadow w-100">
-                        <img src="../images/tienda/tienda_caja_12.png" class="card-img-top" alt="Calzado">
+                        <img src="../images/catalogo/catalogo_caja_14.png" class="card-img-top" alt="Calzado">
                         <div class="card-body">
                             <h5 class="card-title">
-                                Calzado Cosplay Sports
+                                OSHI NO KO
                             </h5>
                             <p class="card-text">
-                                Zapatillas para cosplay deportivo
+                                Inspirada en Ai Hoshino
                             </p>
-                            <span class="badge bg-warning">
-                                Calzado
-                            </span>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle">39</span>
+                                <span class="etiqueta-talle">40</span>
+                                <span class="etiqueta-talle">41</span>
+                                <span class="etiqueta-talle">42</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-success">
+                                    Calzado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay props">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_15.png" class="card-img-top" alt="Cosplay Props">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Hatsune Miku
+                            </h5>
+                            <p class="card-text">
+                                Inspirado en Hatsune Miku
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                                <span class="etiqueta-talle etiqueta-talle-unico">Talle único (Props)</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay 
+                                </span>
+                                <span class="badge bg-info">
+                                    Props
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item calzado">
                     <div class="card shadow w-100">
-                        <img src="../images/tienda/tienda_caja_13.png" class="card-img-top" alt="Calzado">
+                        <img src="../images/catalogo/catalogo_caja_16.png" class="card-img-top" alt="Calzado">
                         <div class="card-body">
                             <h5 class="card-title">
-                                Botas Cyberpunk Cosplay
+                                Herta
                             </h5>
                             <p class="card-text">
-                                Botas altas para cosplay
+                                Inspirada en Honkai Star Rail
                             </p>
-                            <span class="badge bg-warning">
-                                Calzado
-                            </span>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle">38</span>
+                                <span class="etiqueta-talle">39</span>
+                                <span class="etiqueta-talle">40</span>
+                                <span class="etiqueta-talle">41</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-success">
+                                    Calzado
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_17.png" class="card-img-top" alt="cosplay">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Astolfo Colegiala
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Fate Zero
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay peluca calzado">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_18.png" class="card-img-top" alt="Cosplay Peluca Calzado">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Aki
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Chainsaw Man
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                                <span class="etiqueta-talle">39</span>
+                                <span class="etiqueta-talle">40</span>
+                                <span class="etiqueta-talle">41</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span>
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                                <span class="badge bg-success">
+                                    Calzado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_19.png" class="card-img-top" alt="Cosplay">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Castorice
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Honkai Star Rail
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                                <span class="etiqueta-talle etiqueta-talle-xl">XL</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item peluca">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_20.png" class="card-img-top" alt="Peluca">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Cirene
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Honkai Star Rail
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> <span style="color: #666;">Universal</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_21.png" class="card-img-top" alt="Cosplay">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Cirene
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Honkai Star Rail
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item props">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_22.png" class="card-img-top" alt="Props">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Tingyun Fugue
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Honkai Star Rail
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-unico">Talle único</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-info">
+                                    Props
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay peluca">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_23.png" class="card-img-top" alt="Cosplay Peluca">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Larganoche
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Honkai Star Rail
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span> 
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item props">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_24.png" class="card-img-top" alt="Props">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Hysilens
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Honkai Star Rail
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-unico">Talle único</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-info">
+                                    Props
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay peluca props">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_25.png" class="card-img-top" alt="Cosplay Peluca Props">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Frieren
+                            </h5>
+                            <p class="card-text">
+                                Inspirado en Frieren
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                                <span class="etiqueta-talle etiqueta-talle-unico">Talle único (Props)</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span>
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                                <span class="badge bg-info">
+                                    Props
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item peluca">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_26.png" class="card-img-top" alt="Peluca">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Koleda Belobog
+                            </h5>
+                            <p class="card-text">
+                                Zenless Zone Zero
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> <span style="color: #666;">Universal</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item peluca">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_27.png" class="card-img-top" alt="Peluca">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Ukinami Yuzuha
+                            </h5>
+                            <p class="card-text">
+                                Zenless Zone Zero
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> <span style="color: #666;">Universal</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay peluca">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_28.png" class="card-img-top" alt="Cosplay Peluca">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Nicole Demara
+                            </h5>
+                            <p class="card-text">
+                                Zenless Zone Zero
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span> 
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay peluca">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_29.png" class="card-img-top" alt="Cosplay Peluca">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Koleda Belobog
+                            </h5>
+                            <p class="card-text">
+                                Zenless Zone Zero
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span> 
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item peluca">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_30.png" class="card-img-top" alt="Peluca">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Liu Yin
+                            </h5>
+                            <p class="card-text">
+                                Zenless Zone Zero
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> <span style="color: #666;">Universal</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay peluca props">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_31.png" class="card-img-top" alt="Cosplay Peluca Props">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Nicole Demara
+                            </h5>
+                            <p class="card-text">
+                                Zenless Zone Zero
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-m">M</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                                <span class="etiqueta-talle etiqueta-talle-unico">Talle único (Props)</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span> 
+                                <span class="badge bg-danger">
+                                    Peluca
+                                </span> 
+                                <span class="badge bg-info">
+                                    Props
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_32.png" class="card-img-top" alt="cosplay">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Carlotta
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Wuthering Waves
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                                <span class="etiqueta-talle etiqueta-talle-xl">XL</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_33.png" class="card-img-top" alt="cosplay">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Nefer
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Genshin Impact
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> <span class="etiqueta-talle etiqueta-talle-s">S</span>
+                                <span class="etiqueta-talle etiqueta-talle-l">L</span>
+                                <span class="etiqueta-talle etiqueta-talle-xl">XL</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex catalog-item cosplay">
+                    <div class="card shadow w-100">
+                        <img src="../images/catalogo/catalogo_caja_34.png" class="card-img-top" alt="cosplay">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Lauma
+                            </h5>
+                            <p class="card-text">
+                                Inspirada en Genshin Impact
+                            </p>
+                            <div class="info-talle-catalogo">
+                                <strong>Talle disponible:</strong> 
+                                <span class="etiqueta-talle etiqueta-talle-xl">XL</span>
+                            </div>
+                            <div class="badges-container">
+                                <span class="badge bg-warning">
+                                    Cosplay
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </section>
 
-        <div class="container text-center my-4">
-            <a class="btn btn-link" href="#">
-                Volver arriba
-            </a>
+        <div class="container text-center my-5">
+            
         </div>
 
     </main>
@@ -290,8 +1054,20 @@
           </div>
         </div>
       </footer>
-  
+      <!-- Botón flotante para Volver arriba de la pagina sin tener que scrollear -->
+      <button id="btn-top" type="button" class="btn btn-dark rounded-circle shadow position-fixed" style="bottom:32px;right:32px; z-index:1200; display:none; width:48px; height:48px;">
+      <i class="bi bi-arrow-up"></i>
+      </button>
+
+      <script>
+        // Mostrar el botón sólo al hacer scroll
+        const btnTop = document.getElementById('btn-top');
+        window.addEventListener('scroll', () => {
+          btnTop.style.display = (window.scrollY > 200) ? 'inline-flex' : 'none';
+        });
+        btnTop.onclick = () => window.scrollTo({top:0,behavior:'smooth'});
+        </script>
+
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script></body>
 </html>

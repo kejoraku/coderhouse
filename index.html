@@ -13,12 +13,10 @@
 
 <!-- Con las integraciones de bootstrap y etiquetas modifique un poco los diseños planteados en un principio del wireframe -->
 
-<body style="min-height: 100vh; display: flex; flex-direction: column;">
-
+<body class="body-home">
     <header>
-
         <!-- Para el navegador mantuve el mismo diseño planteado y agregué un estilo diferente con un sombreado, manteniendo todas las funcionalidades que tenia originalmente -->
-
+         <!-- Voy a mantener el menú hamburguesa del navegador de bootstrap para todos los html como dijo el profesor-->
         <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="index.html">Revolución Otaku Oficial</a>
@@ -40,17 +38,17 @@
         </nav>
     </header>
 
-    <main class="flex-shrink-0 pt-5" style="margin-top: 70px;">
-        <div class="container text-center my-4">
-            <h1 class="mb-4">
+    <main class="main-custom">
+        <div class="seccion-inicio-container">
+            <h1 class="inicio-titulo-h1">
                 ¡Indumentaria pensada para tus personajes favoritos y tu día a día!
             </h1>
 
             <!-- En esta instancia, decidí reemplazar la imagen estatica que se encontraba en el inicio, por un carrusel con 5 imágenes para hacer la pagina mas dinámica y tambien poder mostrar mas contenido -->
 
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-10 col-md-12 position-relative">
-                    <div id="carouselInicio" class="carousel slide rounded-3 shadow overflow-hidden" data-bs-ride="carousel">
+            <div class="row justify-content-center align-items-center" style="margin-left: 0; margin-right: 0; width: 100%; max-width: 100%;">
+                <div class="col-lg-10 col-md-12 position-relative" style="width: 100%; max-width: 100%; box-sizing: border-box; padding-left: 2rem; padding-right: 2rem;">
+                    <div id="carouselInicio" class="carousel slide rounded-3 shadow overflow-hidden" data-bs-ride="carousel" style="width: 100%; max-width: 100%;">
                         <!-- Agregué unos botones en el margen inferior para permitir al usuario navegar en él y elegir la imagen que quiera ver -->
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -97,58 +95,70 @@
             </div>
         </div>
     
-        <section class="container my-5">
-
-            <h2 class="text-center mb-4">
-                Sección Destacada
-            </h2>
-
-            <h5 class="text-center mb-5 fw-normal">
+        <section class="seccion-principal">
+            <div class="seccion-principal-titulo-container">
+                <h2 class="seccion-principal-titulo">
+                    Sección Destacada
+                </h2>
+            </div>
+            <h5 class="seccion-principal-sub">
                 ¡Nuestros productos más vendidos!
             </h5>
 
             <!-- Diseño y estilo de card para cada item -->
             <!-- Contenedor de cada imagen -->
-            <div class="row g-4 justify-content-center">
-                <div class="col-12 col-md-6 col-lg-3 d-flex">
-                    <div class="card flex-fill h-100 shadow">
-                        <img src="images/inicio/inicio_caja_1.png" class="card-img-top img-inicio-seccion-destacada mx-auto d-block mt-3" style="max-width:80%;" alt="Cosplay Carlotta Montelli">
+            <div class="row-destacados">
+                <div class="item-destacado">
+                    <div class="card-destacado">
+                        <div class="img-container-destacada">
+                            <img src="images/inicio/inicio_caja_1.png" class="img-destacada" alt="Cosplay Carlotta Montelli">
+                            <button class="zoom-btn-destacada" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
                         <div class="card-body">
-                            <p class="card-title fw-bold text-center">
-                                Cosplay Carlotta Montelli
+                            <p class="card-title-destacado">
+                                Carlotta Montelli
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 d-flex">
-                    <div class="card flex-fill h-100 shadow">
-                        <img src="images/inicio/inicio_caja_2.png" class="card-img-top img-inicio-seccion-destacada mx-auto d-block mt-3" style="max-width:80%;" alt="Remera Hanasato Minori">
+                <div class="item-destacado">
+                    <div class="card-destacado">
+                        <div class="img-container-destacada">
+                            <img src="images/inicio/inicio_caja_2.png" class="img-destacada" alt="Remera Hanasato Minori">
+                            <button class="zoom-btn-destacada" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
                         <div class="card-body">
-                            <p class="card-title fw-bold text-center">
-                                Remera Hanasato Minori
+                            <p class="card-title-destacado">
+                                Agente Evelyn Chevalier
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 d-flex">
-                    <div class="card flex-fill h-100 shadow">
-                        <img src="images/inicio/inicio_caja_3.png" class="card-img-top img-inicio-seccion-destacada mx-auto d-block mt-3" style="max-width:80%;" alt="Remera Satoru Gojo">
+                <div class="item-destacado">
+                    <div class="card-destacado">
+                        <div class="img-container-destacada">
+                            <img src="images/inicio/inicio_caja_3.png" class="img-destacada" alt="Remera Satoru Gojo">
+                            <button class="zoom-btn-destacada" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
                         <div class="card-body">
-                            <p class="card-title fw-bold text-center">
-                                Remera Satoru Gojo
+                            <p class="card-title-destacado">
+                                Power
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 d-flex">
-                    <div class="card flex-fill h-100 shadow">
-                        <img src="images/inicio/inicio_caja_4.png" class="card-img-top img-inicio-seccion-destacada mx-auto d-block mt-3" style="max-width:80%;" alt="Remera Ben 10">
+                <div class="item-destacado">
+                    <div class="card-destacado">
+                        <div class="img-container-destacada">
+                            <img src="images/inicio/inicio_caja_4.png" class="img-destacada" alt="Remera Ben 10">
+                            <button class="zoom-btn-destacada" tabindex="0" aria-label="Ver imagen ampliada"><span class="lupa-icono"></span></button>
+                        </div>
                         <div class="card-body">
-                            <p class="card-title fw-bold text-center">
-                                Remera Ben 10
+                            <p class="card-title-destacado">
+                                Cirene
                             </p>
                         </div>
                     </div>
@@ -157,13 +167,10 @@
             </div>
         </section>
 
-        <div class="container text-center my-5">
+        <div class="seccion-inicio-container text-center my-5">
             <a class="btn btn-dark px-4 py-2 fw-bold shadow-sm" href="pages/catalogo.html">Ver Catálogo</a>
         </div>
 
-        <div class="container text-center mb-3">
-            <a class="btn btn-link" href="#">Volver arriba</a>
-        </div>
     </main>
 
     <!-- Para emplear las heramientas que vimos de CSS Grid se me ocurrió agregar en el Footer los iconos y enlaces a las redes sociales oficiales-->
@@ -210,3 +217,44 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
   </html>
+
+<!-- Modal para ampliar imagen destacada -->
+<div id="modal-img-destacadas" tabindex="-1" aria-modal="true" aria-hidden="true">
+    <button class="modal-cerrar" aria-label="Cerrar">&times;</button>
+    <div class="modal-contenido">
+        <img src="" alt="Imagen ampliada" id="modal-img-destacadas-img">
+    </div>
+</div>
+
+<script>
+(function(){
+  const modal = document.getElementById('modal-img-destacadas');
+  const modalImg = document.getElementById('modal-img-destacadas-img');
+  const cerrarBtn = modal.querySelector('.modal-cerrar');
+  document.querySelectorAll('.img-container-destacada .img-destacada, .img-container-destacada .zoom-btn-destacada').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const img = btn.tagName === 'IMG' ? btn : btn.parentElement.querySelector('img');
+      modalImg.src = img.src;
+      modal.classList.add('abierto');
+      modalImg.focus();
+    });
+  });
+  cerrarBtn.addEventListener('click', function() {
+    modal.classList.remove('abierto');
+    modalImg.src = '';
+  });
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.classList.remove('abierto');
+      modalImg.src = '';
+    }
+  });
+  document.addEventListener('keydown', function(e) {
+    if (modal.classList.contains('abierto') && (e.key === 'Escape' || e.key === 'Esc')) {
+      modal.classList.remove('abierto');
+      modalImg.src = '';
+    }
+  });
+})();
+</script>
