@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revolución Otaku Oficial</title>
+    <!-- <meta name = "description" content = "Parrafo"> -->
+    <!-- Entre 140 y 170 caracteres-->
+    <meta name="description" content="Tienda otaku con ofertas, eventos de anime y los productos más vendidos para fanáticos del anime.">
+    <!-- NO SE SI HABIA QUE USAR KEYWORDS, PERO COMO LO EXPLICARON LO USO-->
+    <!-- <meta name="keywords" content="Palabras clave"-->
+    <meta name="keywords" content="ANIME, OTAKU, EVENTOS, TIENDA, CONVENCIONES, OFERTAS, PELUCAS, COSPLAY, BOTAS, PROPS, GENSHIN IMPACT, ZENLESS ZONE ZERO, WUTHERING WAVES, CHAINSAW MAN, HONKAI STAR RAIL, NEFER, LARGANOCHE, UKINAMI YUZUHA, EVELYN CHEVALIER, CARLOTTA MONTELLI, POWER, CIRENE">
+    <!--TITULO-->
+    <title> Inicio | Tienda Online Otaku </title>
     <!-- Bootstrap 5.3 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
@@ -48,7 +55,7 @@
 
             <div class="row justify-content-center align-items-center" style="margin-left: 0; margin-right: 0; width: 100%; max-width: 100%;">
                 <div class="col-lg-10 col-md-12 position-relative" style="width: 100%; max-width: 100%; box-sizing: border-box; padding-left: 2rem; padding-right: 2rem;">
-                    <div id="carouselInicio" class="carousel slide rounded-3 shadow overflow-hidden" data-bs-ride="carousel" style="width: 100%; max-width: 100%;">
+                    <div id="carouselInicio" class="carousel slide rounded-3 shadow overflow-hidden" data-bs-ride="carousel" data-bs-interval="5000" style="width: 100%; max-width: 100%;">
                         <!-- Agregué unos botones en el margen inferior para permitir al usuario navegar en él y elegir la imagen que quiera ver -->
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -57,27 +64,39 @@
                             <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="3" aria-label="Slide 4"></button>
                             <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="4" aria-label="Slide 5"></button>
                         </div>
+                        <div class="carrusel-titulos-mobile d-md-none text-center my-2 fw-bold">
+                            <span data-slide="0">Comic Con Argentina Edición Cyberpunk</span>
+                            <span data-slide="1" style="display:none;">¡Ofertas de Navidad!</span>
+                            <span data-slide="2" style="display:none;">Año Nuevo Chino en La Plata</span>
+                            <span data-slide="3" style="display:none;">¡Rebajas para despedir el año!</span>
+                            <span data-slide="4" style="display:none;">AGS - Argentina Game Show</span>
+                        </div>
 
                         <div class="carousel-inner">
 
                             <div class="carousel-item active">
-                                <img src="images/inicio/inicio_carrusel_1.png" class="d-block w-100" alt="Primer slide">
+                                <img src="images/inicio/inicio_carrusel_1.jpg" class="d-block w-100" alt="COSPLAY, ANIME, EVENTOS, CYBERPUNK">
+                                <div class="carrusel-banner-titulo"><span>Comic Con Argentina Edición Cyberpunk</span></div>
                             </div>
 
                             <div class="carousel-item">
-                                <img src="images/inicio/inicio_carrusel_2.png" class="d-block w-100" alt="Segundo slide">
+                                <img src="images/inicio/inicio_carrusel_2.jpg" class="d-block w-100" alt="COSPLAY, ANIME, DESCUENTOS,NAVIDAD, GENSHIN IMPACT, HONKAI STAR RAIL, PELUCA, PROPS, NEFER, LARGANOCHE, UKINAMI YUZUHA">
+                                <div class="carrusel-banner-titulo"><span>¡Ofertas de Navidad!</span></div>
                             </div>
 
                             <div class="carousel-item">
-                                <img src="images/inicio/inicio_carrusel_3.png" class="d-block w-100" alt="Tercer slide">
+                                <img src="images/inicio/inicio_carrusel_3.jpg" class="d-block w-100" alt="COSPLAY, ANIME, EVENTOS, AÑO NUEVO CHINO, LA PLATA">
+                                <div class="carrusel-banner-titulo"><span>Año Nuevo Chino en La Plata</span></div>
                             </div>
 
                             <div class="carousel-item">
-                                <img src="images/inicio/inicio_carrusel_4.png" class="d-block w-100" alt="Cuarto slide">
+                                <img src="images/inicio/inicio_carrusel_4.jpg" class="d-block w-100" alt="COSPLAY, PELUCAS, PROPS, CALZADO, BOTAS, ANIME, DESCUENTOS,NAVIDAD,HONKAI STAR RAIL, ZENLESS ZONE ZERO, EVELYN CHEVALIER, HYSILENS, HERTA, KOLEDA BELOBOG">
+                                <div class="carrusel-banner-titulo"><span>¡Rebajas para despedir el año!</span></div>
                             </div>
 
                             <div class="carousel-item">
-                                <img src="images/inicio/inicio_carrusel_5.png" class="d-block w-100" alt="Quinto slide">
+                                <img src="images/inicio/inicio_carrusel_5.jpg" class="d-block w-100" alt="COSPLAY, ANIME, EVENTOS, AGS, ARGENTINA GAME SHOW">
+                                <div class="carrusel-banner-titulo"><span>AGS - Argentina Game Show</span></div>
                             </div>
 
                         </div>
@@ -256,5 +275,20 @@
       modalImg.src = '';
     }
   });
+})();
+</script>
+
+<script>
+(function(){
+  // Sincronizar título bajo el carrusel (en mobile) con slide
+  const titulos = document.querySelectorAll('.carrusel-titulos-mobile span');
+  const carousel = document.getElementById('carouselInicio');
+  if (carousel && titulos.length) {
+    carousel.addEventListener('slide.bs.carousel', function(e) {
+      titulos.forEach((span, i)=>{
+        span.style.display = (i === e.to) ? '' : 'none';
+      });
+    });
+  }
 })();
 </script>

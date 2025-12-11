@@ -1742,3 +1742,125 @@ h2{
   transition: none !important;
   transform: none !important;
 }
+
+.carrusel-banner-titulo {
+  position: absolute;
+  left: 2.2vw;
+  bottom: 4.5%; /* Lo posiciono en el borde inferior */
+  background: radial-gradient(circle at left bottom, rgba(22,22,40,0.80) 70%, rgba(22,22,40,0.18) 100%);
+  color: #fff;
+  padding: 0.88em 1.6em 0.88em 1.3em;
+  font-size: 1.20rem;
+  font-weight: 700;
+  border-radius: 16px 12px 16px 32px;
+  box-shadow: 2px 7px 24px 0px rgba(0,0,0,0.33);
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  min-width: 200px;
+  max-width: 82vw;
+  pointer-events: none;
+}
+.carrusel-banner-titulo span {
+  pointer-events: auto;
+}
+.carrusel-titulos-mobile {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .carrusel-banner-titulo {
+    bottom: 2vw;
+    padding: 0.55em 1.1em 0.55em 0.95em;
+    min-width: 110px;
+    border-radius: 9px 8px 11px 13px;
+  }
+}
+@media (max-width: 600px) {
+  .carrusel-banner-titulo {
+    font-size: 0.84rem;
+    font-weight: 600;
+    padding: 0.44em 0.68em 0.54em 0.88em;
+    min-width: 70px;
+    border-radius: 8px 7px 8px 12px;
+  }
+  .carrusel-titulos-mobile {
+    font-size: 0.91rem !important;
+    font-weight: 600;
+    padding: 0.25em 0.69em;
+  }
+}
+.carousel-item {
+  position: relative;
+}
+.carousel-item::after {
+  content: unset;
+  background: unset;
+  pointer-events: none;
+  display: none;
+}
+.carousel-item img {
+  box-shadow: none;
+}
+.carousel-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: inherit;
+  background: radial-gradient(ellipse 100% 75% at 55% 60%, rgba(18,18,29,0) 59%, rgba(22,22,38,0.19) 76%, rgba(20,20,30,0.38) 98%);
+}
+/* Sombra suave a las barritas del carrusel, no se ven en fondos blancos */
+.carousel-indicators [data-bs-target] {
+  box-shadow: 0 0 7px 1px rgba(30,30,66,0.32), 0 2px 8px 0 rgba(0,0,0,0.14);
+  background-color: rgba(50,50,50,0.55); /* mejor contraste */
+  border: 1.5px solid rgba(255,255,255,0.65);
+}
+/* Sombra y fondo a las flechas */
+.carousel-control-prev, .carousel-control-next {
+  filter: drop-shadow(0 2px 8px rgba(8,9,33,0.42));
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgba(26,26,38,0.70);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.18);
+  padding: 0.38em;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-size: 65% 65%;  /* Hace el ícono interno más pequeño */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.carousel-indicators [data-bs-target] {
+  box-shadow: 0 0 7px 1px rgba(30,30,66,0.32), 0 2px 8px 0 rgba(0,0,0,0.14);
+  background-color: rgba(50,50,50,0.55);
+  border: 1.5px solid rgba(255,255,255,0.65);
+  width: 2.2rem;
+  height: 0.5rem;
+  transition: width 0.18s, height 0.18s, border-radius 0.18s;
+  border-radius: 0.9rem;
+}
+@media (max-width: 600px) {
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 1.28rem;
+    height: 1.28rem;
+    padding: 0.2em;
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 0.93rem;
+    height: 0.28rem;
+    border-radius: 0.29rem;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 2.55rem;
+    height: 2.55rem;
+    padding: 0.47em;
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 2.8rem;
+    height: 0.6rem;
+    border-radius: 1.1rem;
+  }
+}
