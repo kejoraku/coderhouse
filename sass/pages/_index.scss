@@ -4,7 +4,7 @@
 //MIXIN
 @use "../utilities/mixin" as *;
 
-// Elimina cualquier list-style de la sección destacados
+// Para eliminar cualquier list-style de la sección destacados
 .row-destacados, 
 .item-destacado, 
 .row-destacados ul, 
@@ -99,7 +99,7 @@ h1.inicio-titulo-h1,
   font-weight: bold !important;
   text-align: center !important;
   margin-top: 2rem !important;
-  margin-bottom: 1.2rem !important;
+  margin-bottom: 3rem !important;
   white-space: normal !important;
   overflow: visible !important;
   text-overflow: unset !important;
@@ -188,19 +188,21 @@ h1.inicio-titulo-h1,
 }
 
 // Contenedor de imagen destacada
-//Por qué no puedo centrar la imagen???
+// Ahora se centró bien en el medio con flexbox
 .img-container-destacada {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-height: 200px;
 }
 
 .img-destacada {
-  max-width: 70%;
-  margin: 1rem auto 0 auto;
-  display: block;
+  max-width: 70% !important;
+  margin: 1rem auto 0 auto !important;
+  display: block !important;
+  object-fit: contain;
 }
 
 .card-destacado .card-body {

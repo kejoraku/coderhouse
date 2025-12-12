@@ -8,7 +8,7 @@
 .contenedor-colecciones h1.margen-inferior-4 {
   text-align: center !important;
   margin-top: 2rem !important;
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 3rem !important;
 }
 
 .contenedor-colecciones {
@@ -81,13 +81,7 @@
   max-width: 70%;
   margin: 0.75rem auto 0 auto;
   display: block;
-  transition: transform .22s cubic-bezier(.35,1.15,.3,1);
-  transform-origin: top center;
-}
-.card-img-colecciones:hover,
-.card-img-colecciones:focus {
-  transform: scale(1.12);
-  z-index: 3;
+  // Sin animación individual así se aplica la animación a toda la cajia de l producto
 }
 
 .card-body-colecciones {

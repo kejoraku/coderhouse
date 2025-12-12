@@ -77,7 +77,16 @@
 }
 
 // Estilos para botones del zoom en los contenedores de productos y la lupita
-.img-container-destacada,
+.img-container-destacada {
+  position: relative !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  cursor: zoom-in !important;
+  width: 100% !important;
+}
+
 .img-container-tienda,
 .img-container-colecciones {
   position: relative !important;
