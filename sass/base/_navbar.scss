@@ -1,0 +1,40 @@
+// NAVBAR
+header,
+header.navbar,
+.navbar.navbar-expand-lg.navbar-light.shadow.fixed-top,
+.navbar.navbar-expand-lg,
+.navbar.navbar-light,
+.navbar.shadow,
+.navbar.fixed-top,
+.navbar {
+  background: #FFFD00 !important;
+  background-color: #FFFD00 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  z-index: 1000 !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+}
+
+.navbar .container {
+  background: transparent !important;
+}
+
+.navbar-brand,
+.navbar .navbar-brand {
+  color: #000 !important;
+}
+
+.nav-link,
+.navbar .nav-link {
+  color: #222 !important;
+}
+
+.nav-link:hover,
+.navbar .nav-link:hover {
+  color: #ff9900 !important;
+}
+
+

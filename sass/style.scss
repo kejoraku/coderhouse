@@ -1,0 +1,40 @@
+/* IMPORTANTE: Comando correcto para compilar:
+sass --watch sass/style.scss CSS/style.css*/
+
+/*Antes de trabajar con el SASS, copio el css sino me lo pisa */
+
+//RESET
+@use "base/reset";
+
+//GLOBAL (estilos globales para puntitos, etc)
+@use "base/global";
+
+//BODY (fondo amarillo siempre)
+@use "base/body";
+
+//NAVBAR (amarillo fijo, cuando scrolleaba se desaparecía el color en el navbar)
+@use "base/navbar";
+
+//FOOTER (Sería el mismo para para todas las páginas)
+@use "base/footer";
+
+//MODALS (común para todas las páginas)
+@use "base/modals";
+
+//BTN-TOP (botón scroll arriba cona la flechita)
+@use "base/btn-top";
+
+//INDEX
+@use "pages/index";
+
+//TIENDA
+@use "pages/tienda";
+
+//CATALOGO
+@use "pages/catalogo";
+
+//COLECCIONES&COSPLAY
+@use "pages/colecciones&cosplay" as *;
+
+//CONTACTO
+@use "pages/contacto" as *;

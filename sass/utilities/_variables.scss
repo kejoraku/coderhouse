@@ -1,0 +1,28 @@
+//La variable que declaro no tiene que ver con la clase en CSS asignada previamente, tomo en cuenta el atributo
+//Veo que el color naranja se repite mucho (en el css de ejemplo de la clase práctica)
+//No declaro estilos en SASS, declaro utilidades//PALETA DE COLORES
+$body-bg: #040000;
+$color-tipografia: whitesmoke;
+//Basicamente reviso el código que tengo creado, veo que puedo cambiar o utilizar mediante SASS y lo creo.
+$color-principal: #FFFD00;
+$color-secundario: #ff9900;
+$color-negro: #000;
+$color-blanco: #fff;
+$color-texto: #222;
+$color-warning: #ffc107;
+$color-danger: #dc3545;
+$color-info: #17a2b8;
+$color-success: #28a745;
+$color-gris-medio: #6c757d;
+$color-gris-suave: #f8f9fa;
+$box-shadow-base: 0 4px 14px rgba(0,0,0,0.08);
+$box-shadow-img: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+$box-shadow-carrusel: 0 2px 8px rgba(0,0,0,0.08);
+$box-shadow-footer: 0px 10px 20px rgba(0, 0, 0, 0.2);
+$radius-card: 1rem;
+$radius-boton: 0.375rem;
+$radius-img: 0.5rem;
+$max-width-app: 1400px;
+$breakpoint-lg: 991px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;

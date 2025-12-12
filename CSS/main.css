@@ -1,9 +1,5 @@
 @charset "UTF-8";
-/* IMPORTANTE: Comando correcto para compilar:
-sass --watch sass/style.scss CSS/style.css
-
-NOTA: Debe ser CSS con mayúsculas, no css con minúsculas
-*/
+/* Comando para compilar: sass --watch sass/style.scss CSS/style.css*/
 /*Antes de trabajar con el SASS, copio el css sino me lo pisa */
 /* reset */
 * {
@@ -542,7 +538,6 @@ h1.inicio-titulo-h1,
   padding: 0.75rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   flex-grow: 1;
 }
@@ -1271,4 +1266,4 @@ h1.titulo-contacto-h1,
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

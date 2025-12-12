@@ -1,0 +1,131 @@
+@use "../utilities/variables" as *;
+
+// Estilos para H1 en catálogo
+.container h1,
+.container h1.mb-4,
+h1.mb-4 {
+  text-align: center !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.catalog-item {
+  display: flex;
+}
+.catalog-item > .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.card .card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 0;
+  justify-content: flex-start;
+}
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: $color-texto;
+  flex-shrink: 0;
+}
+.card-text {
+  font-size: 0.9rem;
+  color: $color-gris-medio;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+.info-talle-catalogo {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  color: #666;
+  display: block;
+  width: 100%;
+  flex-shrink: 0;
+}
+.badges-container {
+  display: block;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  line-height: 1.5;
+  flex-shrink: 0;
+}
+.badges-container .badge,
+.badges-container span.badge {
+  display: inline-block !important;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+.badge-cosplay {
+  background-color: $color-warning;
+  color: $color-negro;
+}
+.badge-peluca {
+  background-color: $color-danger;
+  color: $color-blanco;
+}
+.badge-props {
+  background-color: $color-info;
+  color: $color-blanco;
+}
+.badge-calzado {
+  background-color: $color-success;
+  color: $color-blanco;
+}
+
+// Estilos para badges de Bootstrap (bg-warning, bg-danger, bg-info, bg-success)
+.badge.bg-warning,
+span.badge.bg-warning {
+  background-color: $color-warning !important;
+  color: $color-blanco !important;
+  padding: 0.35em 0.65em !important;
+}
+
+.badge.bg-danger,
+span.badge.bg-danger {
+  background-color: $color-danger !important;
+  color: $color-blanco !important;
+  padding: 0.35em 0.65em !important;
+}
+
+.badge.bg-info,
+span.badge.bg-info {
+  background-color: $color-info !important;
+  color: $color-blanco !important;
+  padding: 0.35em 0.65em !important;
+}
+
+.badge.bg-success,
+span.badge.bg-success {
+  background-color: $color-success !important;
+  color: $color-blanco !important;
+  padding: 0.35em 0.65em !important;
+}
+.etiqueta-talle {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: $radius-boton;
+  background-color: transparent;
+  color: #212529;
+  border: 1px dashed $color-gris-medio;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.etiqueta-talle-unico, .etiqueta-talle-s, .etiqueta-talle-m, .etiqueta-talle-l, .etiqueta-talle-xl {
+  background-color: transparent;
+  color: #212529;
+  border: 1px dashed $color-gris-medio;
+}

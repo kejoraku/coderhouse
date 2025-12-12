@@ -1,0 +1,302 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+
+//MIXIN
+@use "../utilities/mixin" as *;
+
+// Elimina cualquier list-style de la sección destacados
+.row-destacados, 
+.item-destacado, 
+.row-destacados ul, 
+.row-destacados li, 
+.item-destacado ul, 
+.item-destacado li,
+.row-destacados *,
+.item-destacado *,
+.card-destacado *,
+.card-body *,
+.card-body p,
+.card-body p::before,
+.card-body p::after,
+.card-body br::before,
+.card-body br::after {
+  list-style: none !important;
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background: none !important;
+  content: none !important;
+}
+
+.carrusel-banner-titulo {
+  position: absolute;
+  left: 2.2vw;
+  bottom: 4.5%;
+  background: rgba(0,0,0,0.52) !important;
+  color: #fff !important;
+  padding: 0.8em 1.2em 0.8em 1.2em;
+  font-size: 1.12rem;
+  font-weight: 700;
+  border-radius: 18px 10px 18px 23px;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  min-width: 180px;
+  max-width: 85vw;
+}
+
+.navbar, 
+header, 
+.navbar.navbar-expand-lg,
+.navbar.navbar-light,
+header .navbar {
+  background: $color-principal !important;
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,0.14) !important;
+  z-index: 9999 !important;
+}
+
+html, 
+body,
+body.body-home,
+body.body-main {
+  background: $color-principal !important;
+  background-color: $color-principal !important;
+}
+
+.body-home {
+  min-height: 100vh;
+  @include flex-column;
+}
+
+.main-custom {
+  margin-top: 70px;
+  flex-shrink: 0;
+  padding-top: 3rem;
+  max-width: $max-width-app;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.seccion-inicio-container {
+  max-width: $max-width-app;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.inicio-titulo-h1,
+h1.inicio-titulo-h1,
+.seccion-inicio-container h1.inicio-titulo-h1 {
+  font-size: 1.7rem !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1.2rem !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+}
+
+.seccion-principal {
+  max-width: $max-width-app;
+  margin: 0 auto 3rem auto;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.seccion-principal-titulo-container {
+  background-color: $color-negro !important;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion-principal-titulo {
+  font-size: 1.8rem;
+  color: $color-blanco !important;
+  text-align: center;
+  font-weight: 600;
+  background: none;
+  box-shadow: none;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.seccion-principal-sub {
+  font-size: 1.14rem;
+  color: #444;
+  padding: 2rem 0 0.5rem 0;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 2.8rem;
+}
+
+.row-destacados {
+  display: flex;
+  gap: 2.3rem 1.08rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.item-destacado {
+  min-width: 180px;
+  max-width: 220px;
+  flex: 1 1 18.5%;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  // Animación en todo el contenedor del producto
+  transition: transform .22s cubic-bezier(.35,1.15,.3,1);
+  transform-origin: top center;
+}
+
+.item-destacado:hover,
+.item-destacado:focus-within {
+  transform: scale(1.12);
+  z-index: 5;
+}
+
+.card-destacado {
+  background: $color-blanco !important;
+  background-color: $color-blanco !important;
+  @include border-radius-card;
+  @include card-shadow;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  border: none !important;
+}
+
+// Contenedor de imagen destacada
+//Por qué no puedo centrar la imagen???
+.img-container-destacada {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.img-destacada {
+  max-width: 70%;
+  margin: 1rem auto 0 auto;
+  display: block;
+}
+
+.card-destacado .card-body {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.card-title-destacado {
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.95rem;
+  margin: 0;
+  list-style: none !important;
+}
+
+.card-body *,
+.card-body p,
+.card-body br::before,
+.card-body br::after {
+  list-style: none !important;
+  content: none !important;
+}
+
+// Responsive
+@include respond-to(md) {
+  .item-destacado {
+    min-width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .row-destacados {
+    gap: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@include respond-to(sm) {
+  .main-custom {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .seccion-inicio-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .seccion-principal {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .inicio-titulo-h1 {
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .row-destacados {
+    gap: 1rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+.main-custom .row-destacados .item-destacado {
+  min-width: 180px;
+  max-width: 220px;
+  flex: 1 1 18.5%;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  transition: transform .22s cubic-bezier(.35,1.15,.3,1) !important;
+  transform-origin: top center !important;
+  background: none !important;
+}
+
+.main-custom .row-destacados .item-destacado:hover,
+.main-custom .row-destacados .item-destacado:focus-within {
+  transform: scale(1.12) !important;
+  z-index: 5 !important;
+}
+
+.main-custom .row-destacados .item-destacado .card-destacado {
+  background: $color-blanco !important;
+  background-color: $color-blanco !important;
+  border-radius: $radius-card !important;
+  padding-bottom: 0.5rem !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-height: 100% !important;
+  border: none !important;
+  box-shadow: $box-shadow-base !important;
+}
+

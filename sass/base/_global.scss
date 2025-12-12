@@ -1,0 +1,48 @@
+// Estilos globales para eliminar los puntitos negros esos de TODOS los textos
+.card-text-tienda,
+.card-text-tienda *,
+.card-text-tienda p,
+.card-text-tienda p::before,
+.card-text-tienda p::after,
+.card-text-tienda br::before,
+.card-text-tienda br::after,
+.card-body-tienda *,
+.card-body-tienda p,
+.card-body-tienda p::before,
+.card-body-tienda p::after,
+.card-text-colecciones,
+.card-text-colecciones *,
+.card-text-colecciones p,
+.card-text-colecciones p::before,
+.card-text-colecciones p::after,
+.card-text-colecciones br::before,
+.card-text-colecciones br::after,
+.card-body-colecciones *,
+.card-body-colecciones p,
+.card-body-colecciones p::before,
+.card-body-colecciones p::after,
+.card-body *,
+.card-body p,
+.card-body p::before,
+.card-body p::after,
+.card-body br::before,
+.card-body br::after {
+  list-style: none !important;
+  list-style-type: none !important;
+  content: none !important;
+}
+
+// Eliminar puntitos de cualquier elemento dentro de cards
+.card-destacado *,
+.card-tienda *,
+.card-colecciones *,
+.card * {
+  &::before,
+  &::after {
+    list-style: none !important;
+    list-style-type: none !important;
+    content: none !important;
+  }
+}
+
+

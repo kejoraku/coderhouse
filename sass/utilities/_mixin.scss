@@ -1,0 +1,57 @@
+//Son 'cajas' donde vamos a poder ubicar las propiedades con las que vamo a trabajar
+//Bloques de estilos
+//Podemos mezclar lo que queremos
+//Se crea algo que se pueda reutilizar
+
+@use "variables" as *;
+
+//Con parámetros
+//La idea es encontrar 1 o varias propiedades en distintos componentes pero con valores distintos
+//Por ejemplo justifi content: center, y en otra : allign items
+
+//CON PARAMETROS
+
+
+//SIN PARAMETROS
+
+
+//HIBRIDO
+@mixin card-shadow {
+  box-shadow: $box-shadow-base;
+}
+@mixin img-shadow {
+  box-shadow: $box-shadow-img;
+}
+@mixin carrusel-shadow {
+  box-shadow: $box-shadow-carrusel;
+}
+@mixin footer-shadow {
+  box-shadow: $box-shadow-footer;
+}
+@mixin border-radius-card {
+  border-radius: $radius-card;
+}
+@mixin border-radius-boton {
+  border-radius: $radius-boton;
+}
+@mixin border-radius-img {
+  border-radius: $radius-img;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) {@content;}
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) {@content;}
+  } @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) {@content;}
+  }
+}
